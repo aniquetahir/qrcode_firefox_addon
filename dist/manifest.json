@@ -4,7 +4,11 @@
   "version": "1.0",
 
   "description": "Adds a QR code to the webpage.",
-
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "admin@cat.ninja"
+    }
+  },
   "permissions": [
     "activeTab"
   ],
