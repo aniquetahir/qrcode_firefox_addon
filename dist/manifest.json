@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "EmbedQR",
+  "version": "1.0",
+
+  "description": "Adds a QR code to the webpage.",
+
+  "permissions": [
+    "activeTab"
+  ],
+
+  "browser_action": {
+    "default_icon": "icons/qr32.png",
+    "default_title": "EmbedQR",
+    "default_popup": "insert_url.html"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["main.js"]
+    }
+  ]
+
+}
